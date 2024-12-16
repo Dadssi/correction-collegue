@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+ <header>
+     <div>
+        <i class="fa-solid fa-bars menu"></i>
+     </div>
+     <div>
+        <img src="/images/logo.png" alt="" class="logo">
+     </div>
+     <div class="input">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" placeholder="          Search for Player....">
+     </div>
+     <div class="list">
+        <ul>
+            <li>Players</li>
+            <li>Squad Builder</li>
+            <li>SBCs</li>
+            <li>Marke</li>
+            <li id="format">Formation</li>
+                  <!-- ================= -->
+         <div class="formation">
+         
+             <select class="select">
+                <option value="" id="formation-three">4-3-3</option>
+                <option value="" id="formation-two">4-4-2</option>
+             </select>
+       </div>
+      </div>
+         <!-- /////////////////////////// -->
+        </ul>
+     </div>
+  <div class="menu-mult">
+    <i class="fas fa-th"></i>
+  </div>
+  <div class="button">
+    <button>Sign in</button> 
+  </div> 
+   
+ </header> 
+
+
+
+
+
+
+
+
+ 
+
+
+ <section class="section1">
+   <div class="section1-div">
+      <div class="container">
+        <div class="terrain" >
+         <!-- <img src="/images/terrain_1.png" alt="" width="80% !important" > -->
+<!-- ///////////////////////////// -->
+
+<section class="section-cards">
+   <div class="grid">
+        <!-- ++++++ -->
+     <div class="grid-one">  
+      <div class="fut-player-card" id="ST-gouch">
+         
+           <i class="fa-regular fa-square-plus plus" id="plus_icon" onclick="addPlayer('ST-gouch')"></i>
+
+      </div>
+   
+      </div>
+  
+     <div class="grid-one">  
+        
+              <div class="fut-player-card" id="ST_droit">
+                 <i class="fa-regular fa-square-plus plus " onclick="addPlayer('ST_droit')"></i>
+              </div>
+  
+             
+      </div>
+      <!-- ////////////////////         -->
+  
+      
+  
+      
+              
+             
+  </div>
+   <div class="grid-grid2">
+        <!-- ++++++ -->
+     <div class="grid-one position">  
+        <div class="fut-player-card " id="LM">
+           <i class="fa-regular fa-square-plus plus plus-one" onclick="addPlayer('LM')"></i>
+
+             </div>
+        
+     </div>
+  
+     <div class="grid-one">  
+        <div class="fut-player-card" id="CM-droit">
+           <i class="fa-regular fa-square-plus plus plus-one" onclick="addPlayer('CM-droit')"></i>
+
+             </div>
+        
+     </div>
+  
+     <div class="grid-one">  
+        <div class="fut-player-card" id="CM-gouch">
+           <i class="fa-regular fa-square-plus plus plus-one" onclick="addPlayer('CM-gouch')"></i>
+
+                
+             </div>
+        
+     </div>
+  
+     <div class="grid-one position">  
+              <div class="fut-player-card" id="RM">
+                 <i class="fa-regular fa-square-plus plus plus-one" onclick="addPlayer('RM')"></i>
+
+              </div>
+  
+             
+      </div>
+              
+  </div>
+  </section>
+ <!-- =========invisible  -->
+<section class="section-cards card-card">
+   <div class="grid">
+        <!-- ++++++ -->
+     <div class="grid-one">  
+        <div class="fut-player-card pos-one" id="pos-one">
+  
+           <i class="fa-regular fa-square-plus plus" id="plus_icon" onclick="addPlayer('pos-one')"></i>
+                
+             </div>
+  
+           
+        
+      </div>
+  
+     <div class="grid-one">  
+        
+              <div class="fut-player-card pos-two" id="pos-two">
+                 <i class="fa-regular fa-square-plus plus " onclick="addPlayer('pos-two')"></i>
+              </div>
+  
+             
+      </div>
+      <!-- ////////////////////         -->
+  
+      
+  
+      
+              
+             
+  </div>
+   <div class="grid-grid2">
+        <!-- ++++++ -->
+     <div class="grid-one position">  
+        <div class="fut-player-card pos-three" id="pos-three">
+           <i class="fa-regular fa-square-plus plus plus-one" onclick="addPlayer('pos-three')"></i>
+                
+             </div>
+        
+     </div>
+  
+     <div class="grid-one">  
+        <div class="fut-player-card pos-four" id="pos-four">
+           <i class="fa-regular fa-square-plus plus plus-one" onclick="addPlayer('pos-four')"></i>
+                
+             </div>
+        
+     </div>
+  
+     <div class="grid-one">  
+        <div class="fut-player-card pos-five" id="pos-five">
+           <i class="fa-regular fa-square-plus plus plus-one" onclick="addPlayer('pos-five')"></i>
+                
+        
+     </div>
+  
+     <div class="grid-one position">  
+              <div class="fut-player-card pos-six" id="pos-six">
+                 <i class="fa-regular fa-square-plus plus plus-one" onclick="addPlayer('pos-six')"></i>
+  
+             
+      </div>
+               
+  </div>
+</section>
+<!-- ================ end invisible -->
+
+ <div class="grid-grid3">
+      <!-- ++++++ -->
+   <div class="grid-one position">  
+      <div class="fut-player-card" id="LB">
+         <i class="fa-regular fa-square-plus plus plus-one" onclick="addPlayer('LB')"></i>
+              
+           </div>
+      
+    </div>
+
+   <div class="grid-one">  
+            <div class="fut-player-card" id="CB-gouch">
+               <i class="fa-regular fa-square-plus plus plus-one" onclick="addPlayer('CB-gouch')"></i>
+            
+            </div>
+
+           
+    </div>
+   <div class="grid-one">  
+            <div class="fut-player-card" id="CB-droit">
+               <i class="fa-regular fa-square-plus plus plus-one" onclick="addPlayer('CB-droit')"></i>
+            
+            </div>
+
+           
+    </div>
+   <div class="grid-one position">  
+            <div class="fut-player-card" id="RB">
+               <i class="fa-regular fa-square-plus plus plus-one" onclick="addPlayer('RB')"></i>
+
+            </div>
+
+           
+   </div>
+</div>
+    <!-- ////////////////////         -->
+
+    <div class="grid-grid4">
+      <div class="grid-one">  
+         <div class="fut-player-card" id="GK">
+            <i class="fa-regular fa-square-plus plus plus-one" onclick="addPlayer('GK')"></i>
+
+         </div>
+
+        
+</div>
+   </div>
+      </div>
+   
+    </div>
+   </div>
+</div>
+</section>
+
+<section id="modal">
+   
+   <form id="formulaire">
+      <h1>add new player</h1>
+      <i class="fa-sharp fa-solid fa-xmark" id="close"></i>
+      <input type="text" placeholder="  Full Name...." class="name" id="taskName">
+      <input type="url" placeholder="Enter Url imag" class="name" id="taskUrl">
+      <input type="url" placeholder="  Nationality" class="name" id="taskNastionality">
+      <input type="url" placeholder="club" class="name" id="taskClub">
+      <input type="number" min="50" max="100" placeholder="  rating" class="name" id="taskRating">
+      <select class="name" id="taskPosition">
+         <option value="st">ST</option>
+         <option value="lw">Lw</option>
+         <option value="lm">LM</option>
+         <option value="cm">CM</option>
+         <option value="rm">RM</option>
+         <option value="lb">LB</option>
+         <option value="cb1">CB1</option>
+         <option value="cb2">CB2</option>
+         <option value="rb">RB</option>
+         <option value="gk">GK</option>
+      </select>
+      <input type="number" min="50" max="100" placeholder="   pace" class="name" id="taskPace">
+      <input type="number" min="50" max="100" placeholder="  shooting" class="name" id="taskShooting">
+      <input type="number" min="50" max="100" placeholder="  passing" class="name" id="taskPassing">
+      <input type="number" min="50" max="100" placeholder="  dribbling" class="name" id="taskDrib">
+      <input type="number" min="50" max="100" placeholder="  defending" class="name" id="taskDefen">
+      <input type="number" min="50" max="100" placeholder="  physical" class="name" id="taskPhysical">
+      
+      
+      
+      <div>
+         <button id="taskAjouter" type="submit">Ajouter</button>
+         <button id="taskModifier" ><i class="fa-solid fa-pen-to-square"></i></button>
+         <button id="taskSupprimer"><i class="fa-sharp fa-solid fa-trash"></i></button>
+      </div>
+   </form>
+</section>
+   <!-- =============disposition  -->
+    <section class="disposition-section ">
+      <div class="grid-one" >  
+         <div class="fut-player-card" id="dispo-one" >
+            
+            
+            <i class="fa-regular fa-square-plus plus plus-one" onclick="addPlayer('dispo-one')"></i>
+            <div class="player-card-top">
+               <div class="player-master-info">
+                  <div class="player-rating">
+                     <span></span>
+                  </div>
+                  <div class="player-position">
+                     <span></span>
+                  </div>
+                  <div class="player-nation">
+                     <!-- <img src="https://selimdoyranli.com/cdn/fut-player-card/img/argentina.svg" alt="Argentina" draggable="false"/> -->
+                  </div>
+                  <div class="player-club">
+                     <!-- <img src="https://selimdoyranli.com/cdn/fut-player-card/img/barcelona.svg" alt="Barcelona" draggable="false"/> -->
+                  </div>
+               </div>
+               <div class="player-picture">
+                  <!-- <img src="https://selimdoyranli.com/cdn/fut-player-card/img/messi.png" alt="Messi" draggable="false"/> -->
+                  <div class="player-extra">
+                     <span></span>
+                     <span></span>
+                  </div>
+               </div>
+            </div>
+            <div class="player-card-bottom">
+               <div class="player-info">
+                  <!-- Player Name-->
+                  <div class="player-name">
+                     <span></span>
+                  </div>
+                  <!-- Player Features-->
+                  <div class="player-features">
+                     <div class="player-features-col">
+                        <span>
+                           <div class="player-feature-value"></div>
+                           <div class="player-feature-title"></div>
+                        </span>
+                        <span>
+                           <div class="player-feature-value"></div>
+                           <div class="player-feature-title"></div>
+                        </span>
+                        <span>
+                           <div class="player-feature-value"></div>
+                           <div class="player-feature-title"></div>
+                        </span>
+                     </div>
+                     <div class="player-features-col">
+                        <span>
+                           <div class="player-feature-value"></div>
+                           <div class="player-feature-title"></div>
+                        </span>
+                        <span>
+                           <div class="player-feature-value"></div>
+                           <div class="player-feature-title"></div>
+                        </span>
+                        <span>
+                           <div class="player-feature-value"></div>
+                           <div class="player-feature-title"></div>
+                        </span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+        
+ </div>
+
+ <div class="grid-one">  
+   <div class="fut-player-card" id="dispo-two">
+      <i class="fa-regular fa-square-plus plus plus-one" onclick="addPlayer('dispo-two')"></i>
+      <div class="player-card-top">
+         <div class="player-master-info">
+            <div class="player-rating">
+               <span></span>
+            </div>
+            <div class="player-position">
+               <span></span>
+            </div>
+            <div class="player-nation">
+               <!-- <img src="https://selimdoyranli.com/cdn/fut-player-card/img/argentina.svg" alt="Argentina" draggable="false"/> -->
+            </div>
+            <div class="player-club">
+               <!-- <img src="https://selimdoyranli.com/cdn/fut-player-card/img/barcelona.svg" alt="Barcelona" draggable="false"/> -->
+            </div>
+         </div>
+         <div class="player-picture">
+            <!-- <img src="https://selimdoyranli.com/cdn/fut-player-card/img/messi.png" alt="Messi" draggable="false"/> -->
+            <div class="player-extra">
+               <span></span>
+               <span></span>
+            </div>
+         </div>
+      </div>
+      <div class="player-card-bottom">
+         <div class="player-info">
+            <!-- Player Name-->
+            <div class="player-name">
+               <span></span>
+            </div>
+            <!-- Player Features-->
+            <div class="player-features">
+               <div class="player-features-col">
+                  <span>
+                     <div class="player-feature-value"></div>
+                     <div class="player-feature-title"></div>
+                  </span>
+                  <span>
+                     <div class="player-feature-value"></div>
+                     <div class="player-feature-title"></div>
+                  </span>
+                  <span>
+                     <div class="player-feature-value"></div>
+                     <div class="player-feature-title"></div>
+                  </span>
+               </div>
+               <div class="player-features-col">
+                  <span>
+                     <div class="player-feature-value"></div>
+                     <div class="player-feature-title"></div>
+                  </span>
+                  <span>
+                     <div class="player-feature-value"></div>
+                     <div class="player-feature-title"></div>
+                  </span>
+                  <span>
+                     <div class="player-feature-value"></div>
+                     <div class="player-feature-title"></div>
+                  </span>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+  
+</div>
+
+<div class="grid-one">  
+   <div class="fut-player-card" id="dispo-three">
+      <i class="fa-regular fa-square-plus plus plus-one" onclick="addPlayer('dispo-three')"></i>
+      <div class="player-card-top">
+         <div class="player-master-info">
+            <div class="player-rating">
+               <span></span>
+            </div>
+            <div class="player-position">
+               <span></span>
+            </div>
+            <div class="player-nation">
+               <!-- <img src="https://selimdoyranli.com/cdn/fut-player-card/img/argentina.svg" alt="Argentina" draggable="false"/> -->
+            </div>
+            <div class="player-club">
+               <!-- <img src="https://selimdoyranli.com/cdn/fut-player-card/img/barcelona.svg" alt="Barcelona" draggable="false"/> -->
+            </div>
+         </div>
+         <div class="player-picture">
+            <!-- <img src="https://selimdoyranli.com/cdn/fut-player-card/img/messi.png" alt="Messi" draggable="false"/> -->
+            <div class="player-extra">
+               <span></span>
+               <span></span>
+            </div>
+         </div>
+      </div>
+      <div class="player-card-bottom">
+         <div class="player-info">
+            <!-- Player Name-->
+            <div class="player-name">
+               <span></span>
+            </div>
+            <!-- Player Features-->
+            <div class="player-features">
+               <div class="player-features-col">
+                  <span>
+                     <div class="player-feature-value"></div>
+                     <div class="player-feature-title"></div>
+                  </span>
+                  <span>
+                     <div class="player-feature-value"></div>
+                     <div class="player-feature-title"></div>
+                  </span>
+                  <span>
+                     <div class="player-feature-value"></div>
+                     <div class="player-feature-title"></div>
+                  </span>
+               </div>
+               <div class="player-features-col">
+                  <span>
+                     <div class="player-feature-value"></div>
+                     <div class="player-feature-title"></div>
+                  </span>
+                  <span>
+                     <div class="player-feature-value"></div>
+                     <div class="player-feature-title"></div>
+                  </span>
+                  <span>
+                     <div class="player-feature-value"></div>
+                     <div class="player-feature-title"></div>
+                  </span>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+  
+</div>
+    </section>
+
+ <footer>
+  <div class="footer-one">
+    <div class="one">
+       <p>Contact us on social networks!</p>
+    </div>
+    <div class="two">
+       <i class="fa-brands fa-youtube"></i>
+       <i class="fa-brands fa-facebook-f"></i>
+       <i class="fa-brands fa-x-twitter"></i>
+       <i class="fa-brands fa-instagram"></i>
+       <i class="fa-brands fa-tiktok"></i>
+    </div>
+  </div>
+
+  <div class="footer-two">
+      <div class="three">
+         <h3>LATEST SQUADS</h3>
+       <div class="vide"></div>
+         <p>FC Pro</p>
+         <p>Team Of The Week</p>
+         <p> Track Stars</p>
+         <p>Team Of The Week 9 </p>
+         <p>Ballon d'Or</p>
+
+      </div>
+      <div class="four">
+         <h3>USEFUL LINKS</h3>
+         <div class="vide"></div>
+         <p>Squad Builder</p>
+         <p>SBC</p>
+         <p>EA FC 25 Players</p>
+         
+
+      </div>
+      <div class="five">
+         <h3>FUTBIN APPLICATIONS</h3>
+         <div class="vide"></div>
+         <p> <i class="fa-brands fa-android"></i> FUTBIN For Android</p>
+         <p> <i class="fa-brands fa-apple"></i> FUTBIN For IOS</p>
+         <p>More Details</p>
+         
+
+      </div>
+  </div>
+  <div class="footer-three">
+      <p>© 2014-2024 Copyright <span>  FUTBIN.com</span>  All FIFA assets are property of EA Sports. <span>   TOS Privacy Policy Cookie Policy Contact</span>
+      </p>
+  </div>
+  <div class="footer-four">
+    <p>Update privacy preferences</p>
+  </div>
+
+ </footer>
+
+
+
+
+
+    <script src="score.js"></script>
+</body>
+</html>
